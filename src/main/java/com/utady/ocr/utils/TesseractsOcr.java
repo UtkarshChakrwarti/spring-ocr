@@ -17,13 +17,15 @@ public class TesseractsOcr {
             Tesseract tesseract = new Tesseract();
             tesseract.setDatapath("src/main/resources/tessdata");
             tesseract.setLanguage(lang);
-            return tesseract.doOCR(image);
-
+            String result = tesseract.doOCR(image);
+            image.delete();
+            return result;
         } catch (TesseractException e) {
             throw new RuntimeException(e);
         }
 
     }
+
     public static File convert(MultipartFile file) throws IOException {
         File convFile = new File(file.getOriginalFilename());
         convFile.createNewFile();
