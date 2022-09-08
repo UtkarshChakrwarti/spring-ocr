@@ -55,6 +55,15 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <archive>
+                        <compress>true</compress>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
