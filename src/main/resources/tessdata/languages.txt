@@ -1,0 +1,17 @@
+chinese traditional
+chinese simplified
+english
+english middle
+equation
+hindi
+spanish
+spanish old
+french
+french middle
+arabic
+bengali
+russian
+indonesian
+urdu
+japanese
+german
